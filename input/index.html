@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单input输入框聚焦动画特效</title>
+    <link rel="stylesheet" href="../static/normalize.css">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+<style>
+    :focus{
+        outline: none;
+    }
+    .col-3{
+        position: relative;
+    }
+    input[type="text"]{
+        color: #333; 
+        width: 100%; 
+        box-sizing: border-box; 
+        letter-spacing: 1px;
+    }
+
+    .effect-2{
+        border: 0; 
+        padding: 7px 0; 
+        border-bottom: 1px solid #ccc;
+    }
+    .effect-2 ~ .focus-border{
+        position: absolute; 
+        bottom: 0; 
+        left: 50%; 
+        width: 0; 
+        height: 2px; 
+        background-color: #3399FF; 
+        transition: 1s;
+    }
+    .effect-2:focus ~ .focus-border{
+        width: 100%; 
+        transition: 1s; 
+        left: 0;
+    }
+</style>
+</head>
+<body>
+    <header class="htmleaf-header">
+        <h1>表单input输入框聚焦动画特效</h1>
+    </header>
+    
+    <div class="row">
+        <div class="container">
+            <div class="col-md-3">
+                <input class="effect-2" type="text" placeholder="Placeholder Text">
+                <span class="focus-border"></span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

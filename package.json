@@ -1,0 +1,16 @@
+{
+  "name": "animation-lib",
+  "version": "1.0.0",
+  "description": "my animation library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/xieyankun/animation-lib.git",
+  "author": "Kira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xieyankun/animation-lib/issues"
+  },
+  "homepage": "https://github.com/xieyankun/animation-lib#readme"
+}
