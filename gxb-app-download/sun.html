@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+<style>
+	body {
+	    background: black;
+	}
+
+	.galaxy {
+	    width: 1300px;
+	    height: 1300px;
+	    position: relative;
+	}
+
+	.galaxy div {
+	    position: absolute;
+	}
+
+	.sun {
+	    background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013205656257-1729257972.png) 0 0 no-repeat;
+	    width: 100px;
+	    height: 100px;
+	    margin: 0 auto;
+	    left: 600px;
+	    top: 600px;
+	}
+
+	.earth{
+	    background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013205943538-1279197333.png) 0 0 no-repeat;
+	    width: 60px;
+	    height: 60px;
+	    top: 620px;
+	    left: 805px;
+	    animation: rotation 10s linear infinite;
+	    transform-origin: -155px 30px;
+	}
+
+	.earth-track{
+	    width: 370px;
+	    height: 370px;
+	    border-radius: 185px;
+	    border: 1px solid #FFF;
+	    left: 465px;
+	    top: 465px;
+	}
+	@keyframes rotation{
+    to{
+        transform: rotate(360deg);
+    }
+}
+</style>
+</head>
+<body>
+	<div class="galaxy">
+	    <div class='sun'></div>
+	    <div class='earth-track'></div>
+	    <div class='earth'></div>
+	</div>
+
+	
+</body>
+</html>
